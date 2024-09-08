@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%;
+   color:#000
+}
+
+h2 {
+  
+  color:#f2efef
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #060606;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  z-index: -1;
+}
+
+.title {
+  margin-left: 30%;
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title0 {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title0 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url(/images/ImgFdo13.jpeg);
+  z-index:2;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background-image: url(/images/ImgFdo1.jpg);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image: url(/images/ImgFdo11.jpeg);
+  z-index:2;
+}
+
+#slide3:before {
+  background-image: url(/images/ImgFdo9.jpeg);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #615555;
+  
+}
+
+.transformed-video {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-150%) rotate(-5deg);
+  width: 250px; /* o cualquier tamaño adecuado */
+  height: auto; /* mantener la relación de aspecto */
+  /* display: block; */
+  margin-left: 30%;
+}
+
+
+.btn {
+  background-color: #4CAF50; /* Color del fondo */
+  color: white;              /* Color del texto */
+  padding: 10px 20px;        /* Relleno alrededor del texto */
+  text-align: center;        /* Centrar el texto */
+  text-decoration: none;     /* Quitar el subrayado */
+  display: inline-block;     /* Comportamiento como un botón */
+  border-radius: 5px;        /* Bordes redondeados */
+}
+
+.btn:hover {
+  background-color: #45a049; /* Color al pasar el mouse */
+}
