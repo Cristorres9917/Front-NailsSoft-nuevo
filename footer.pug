@@ -1,0 +1,41 @@
+div.main
+div.footer
+    div.bubbles
+        - for (var i = 0; i < 128; i++) //Small numbers looks nice too
+            div.bubble(style=`--size:${2+Math.random()*4}rem; --distance:${6+Math.random()*4}rem; --position:${-5+Math.random()*110}%; --time:${2+Math.random()*2}s; --delay:${-1*(2+Math.random()*2)}s;`)
+    div.content
+        div
+            div
+                b NailsSoft:
+                a(href="#") StefanyNails
+                a(href="#") Siguenos
+                a(href="#") About me
+                a(href="#") Contactanos
+                a(href="#") Tel: 300-00-00-00
+            div
+                b Developers:
+                a(href="#") Sebas 
+                a(href="#") Cris
+                a(href="#") Franklin
+            div
+                b 
+                a(href="#" class="fa fa-camera") 
+                a(href="#" class="fa fa-facebook") 
+                a(href="#" class="fa fa-instagram") 
+                a(href="#" class="fa fa-twitter") 
+                a(href="#" class="fa fa-pinterest") 
+                a(href="#") 
+                
+            div
+                b 
+                a(href="#") Todos los derechos Reservados :3
+                
+        div
+            a.image(href="index.html" target="_blank" style="background-image: url(\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg\")")
+            p ©2024 Not CopyRight
+svg(style="position:fixed; top:100vh")
+    defs
+        filter#blob
+            feGaussianBlur(in="SourceGraphic" stdDeviation="10" result="blur")
+            feColorMatrix(in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob")
+            //feComposite(in="SourceGraphic" in2="blob" operator="atop") //After reviewing this after years I can't remember why I added this but it isn't necessary for the blob effect

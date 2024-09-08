@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="images/logo1.png" type="image/png">
+  	<title>Citas🐉</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome and Google Fonts -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.scss">
+  </head>
+  <body>
+		<header class="header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <span class="brand-name">NailsSoft</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <span class="material-icons-outlined">notifications</span>
+              <span class="material-icons-outlined">email</span>
+              <span class="material-icons-outlined">account_circle</span>
+              <button class="material-icons-outlined" id="deleteButton">logout</button>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url(images/fondobkg.jpg);">
+	  			<div class="user-logo">
+                    <a href="index.html"><div class="img" style="background-image: url(images/logo1.png);"></div></a>
+	  				<h3>Citas</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a href="dashboard.html"><span class="fa fa-dashboard mr-3"></span> Dashboard</a>
+              </li>
+              <li class="active">
+                <a href="roles.html"><span class="fa fa-cog mr-3"></span> Roles</a>
+              </li>
+              <li class="active">
+                <a href="usuario.html"><span class="fa fa-user mr-3"></span> Usuarios</a>
+              </li>
+              <li class="active">
+                <a href="insumo.html"><span class="fa fa-circle mr-3"></span> Insumo</a>
+              </li>
+              <li class="active">
+                <a href="proveedores.html"><span class="fa fa-users mr-3"></span> Proveedores</a>
+              </li>
+              <li class="active">
+                <a href="compras.html"><span class="fa fa-shopping-cart mr-3"></span> Compras</a>
+              </li>
+              <li class="active">
+                <a href="servicios.html"><span class="fa fa-hand-paper-o mr-3"></span> Servicios</a>
+              </li>
+              <li class="active">
+                <a href="empleados.html"><span class="fa fa-briefcase mr-3"></span> Empleados</a>
+              </li>
+              <li class="active">
+                <a href="clientes.html"><span class="fa fa-users mr-3"></span> Clientes</a>
+              </li>
+              <li class="active">
+                <a href="venta.html"><span class="fa fa-dollar mr-3"></span> Venta Servicios / Productos</a>
+              </li>
+              <li class="active">
+                <a href="bajaproducto.html"><span class="fa fa-arrow-down mr-3"></span> Baja Productos</a>
+              </li>
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4"> <span>Citas</span></h2>
+        <div id="calendar"></div>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+		  </div>
+      </div>
+      <div id="footer" ></div>
+      
+    <script src="js/includeFooter.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calendario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/alerta.js"></script>
+  </body>
+</html>
