@@ -17,6 +17,7 @@
     
   </head>
   <body>
+    <!-- Header (Navbar) -->
     <header class="header">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,72 +37,189 @@
           </div>
         </nav>
       </div>
-    </header>	
-		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-	        </button>
+    </header>
+  
+    <div class="wrapper d-flex align-items-stretch">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary"></button>
         </div>
-	  		<div class="img bg-wrap text-center py-4" style="background-image: url(images/fondobkg.jpg);">
-	  			<div class="user-logo">
-	  				<a href="index.html"><div class="img" style="background-image: url(images/logo1.png);"></div></a>
-	  				<h3>Empleados</h3>
-	  			</div>
-	  		</div>
+        <div class="img bg-wrap text-center py-4" style="background-image: url(images/fondobkg.jpg);">
+          <div class="user-logo">
+            <a href="index.html">
+              <div class="img" style="background-image: url(images/logo1.png);"></div>
+            </a>
+            <h3>Empleados</h3>
+          </div>
+        </div>
         <ul class="list-unstyled components mb-5">
-            <li class="active">
-                <a href="dashboard.html"><span class="fa fa-dashboard mr-3"></span> Dashboard</a>
-              </li>
-              <li class="active">
-                <a href="roles.html"><span class="fa fa-cog mr-3"></span> Roles</a>
-              </li>
-              <li class="active">
-                <a href="usuario.html"><span class="fa fa-user mr-3"></span> Usuarios</a>
-              </li>
-              <li class="active">
-                <a href="insumo.html"><span class="fa fa-circle mr-3"></span> Insumo</a>
-              </li>
-              <li class="active">
-                <a href="proveedores.html"><span class="fa fa-users mr-3"></span> Proveedores</a>
-              </li>
-              <li class="active">
-                <a href="compras.html"><span class="fa fa-shopping-cart mr-3"></span> Compras</a>
-              </li>
-              <li class="active">
-                <a href="servicios.html"><span class="fa fa-hand-paper-o mr-3"></span> Servicios</a>
-              </li>
-              <li class="active">
-                <a href="clientes.html"><span class="fa fa-users mr-3"></span> Clientes</a>
-              </li>
-              <li class="active">
-                <a href="citas.html"><span class="fa fa-calendar mr-3"></span> Citas</a>
-              </li>
-              <li class="active">
-                <a href="venta.html"><span class="fa fa-dollar mr-3"></span> Venta Servicios / Productos</a>
-              </li>
-              <li class="active">
-                <a href="bajaproducto.html"><span class="fa fa-arrow-down mr-3"></span> Baja Productos</a>
-              </li>
+          <!-- Navigation menu items -->
+          <li class="active"><a href="dashboard.html"><span class="fa fa-dashboard mr-3"></span> Dashboard</a></li>
+          <li class="active"><a href="roles.html"><span class="fa fa-cog mr-3"></span> Roles</a></li>
+          <li class="active"><a href="usuario.html"><span class="fa fa-user mr-3"></span> Usuarios</a></li>
+          <li class="active"><a href="insumo.html"><span class="fa fa-circle mr-3"></span> Insumo</a></li>
+          <li class="active"><a href="proveedores.html"><span class="fa fa-users mr-3"></span> Proveedores</a></li>
+          <li class="active"><a href="compras.html"><span class="fa fa-shopping-cart mr-3"></span> Compras</a></li>
+          <li class="active"><a href="servicios.html"><span class="fa fa-hand-paper-o mr-3"></span> Servicios</a></li>
+          <li class="active"><a href="empleados.html"><span class="fa fa-briefcase mr-3"></span> Empleados</a></li>
+          <li class="active"><a href="citas.html"><span class="fa fa-calendar mr-3"></span> Citas</a></li>
+          <li class="active"><a href="venta.html"><span class="fa fa-dollar mr-3"></span> Venta Servicios / Productos</a></li>
+          <li class="active"><a href="bajaproducto.html"><span class="fa fa-arrow-down mr-3"></span> Baja Productos</a></li>
         </ul>
-
-    	</nav>
-
-        <!-- Page Content  -->
+      </nav>
+  
+      <!-- Main Content -->
       <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4"> <span>Bienvenidos a NailsSoft ¡ Agenda tu cita ahora mismo !</span></h2>
-        <p>NailsSoft es tu refugio para un cuidado exquisito de manos y pies. En nuestro spa, combinamos técnicas de manicura y pedicura de última generación con productos de alta calidad para ofrecerte una experiencia de belleza y relajación sin igual. Disfruta de un ambiente tranquilo y profesional mientras transformamos tus uñas con el toque suave y elegante que mereces. En NailsSoft, tu bienestar y estilo son nuestra prioridad.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="mb-4">Gestión de Empleados</h2>
+  
+        <!-- Action Buttons and Search -->
+        <div class="d-flex justify-content-between mb-3">
+          <button id="openModalBtn" class="buttonModal"><img src="images/5735394.png" alt=""></button>
+  
+          <!-- Modal for Adding New Employee -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Agregar Empleado</h2>
+              <form id="employeeForm">
+                <label for="employeeName">Nombre del Empleado:</label>
+                <input type="text" id="employeeName" name="employeeName" required><br><br>
+  
+                <label for="employeeEmail">Email:</label>
+                <input type="email" id="employeeEmail" name="employeeEmail" required><br><br>
+  
+                <label for="employeePhone">Teléfono:</label>
+                <input type="tel" id="employeePhone" name="employeePhone" required><br><br>
+  
+                <label for="employeeRole">Rol:</label>
+                <input type="text" id="employeeRole" name="employeeRole" required><br><br>
+  
+                <button type="submit">Guardar Empleado</button>
+              </form>
+            </div>
+          </div>
+  
+          <!-- Search Input -->
+          <input type="text" id="searchInput" class="form-control" placeholder="Buscar en la tabla">
+        </div>
+  
+        <!-- Employees Table -->
+        <div class="table-container">
+          <table class="table table-striped table-bordered" id="employeesTable">
+            <thead class="thead-dark">
+              <tr>
+                <th>IdEmpleado</th>
+                <th>Nombre Empleado</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
       </div>
-      
-		</div>
-    <div id="footer" ></div>
-    <script src="js/includeFooter.js"></script>
+    </div>
+  
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/alerta.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/alerta.js"></script>
-  </body>
-</html>
+    <script src="js/formulario.js"></script>
+  
+    <script>
+      // Sample data for initial employee list
+      let employees = [
+        { id: 1, nombre: 'Carlos Rodríguez', email: 'carlos@example.com', telefono: '123456789', rol: 'Manicurista' },
+        { id: 2, nombre: 'Ana Gómez', email: 'ana@example.com', telefono: '987654321', rol: 'Estilista' },
+      ];
+  
+      // Function to render the employees table
+      function renderTable() {
+        const tbody = document.querySelector('#employeesTable tbody');
+        tbody.innerHTML = '';
+        employees.forEach((employee) => {
+          const row = `
+            <tr>
+              <td>${employee.id}</td>
+              <td>${employee.nombre}</td>
+              <td>${employee.email}</td>
+              <td>${employee.telefono}</td>
+              <td>${employee.rol}</td>
+              <td class="actions-btn">
+                <button class="btn btn-warning btn-sm edit-btn"><i class="fa fa-pencil"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn"><i class="fa fa-trash"></i></button>
+              </td>
+            </tr>
+          `;
+          tbody.innerHTML += row;
+        });
+      }
+  
+      // Handle form submission for adding a new employee
+      document.getElementById('employeeForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+  
+        const employeeName = document.getElementById('employeeName').value;
+        const employeeEmail = document.getElementById('employeeEmail').value;
+        const employeePhone = document.getElementById('employeePhone').value;
+        const employeeRole = document.getElementById('employeeRole').value;
+  
+        const newId = employees.length + 1; // Generate new ID
+  
+        // Create new employee object
+        const newEmployee = {
+          id: newId,
+          nombre: employeeName,
+          email: employeeEmail,
+          telefono: employeePhone,
+          rol: employeeRole,
+        };
+  
+        // Add new employee to the array
+        employees.push(newEmployee);
+  
+        // Re-render the table
+        renderTable();
+  
+        // Close the modal
+        modal.style.display = "none";
+      });
+  
+      // Initialize table with sample data
+      renderTable();
+    </script>
+  
+    <script>
+      // Modal functionality
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("openModalBtn");
+      var span = document.getElementsByClassName("close")[0];
+  
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+  
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+  
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+        
+      </div>
+      <div id="footer" ></div>
+      <script src="js/includeFooter.js"></script>
+    </body>
+  </html>
