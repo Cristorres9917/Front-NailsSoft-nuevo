@@ -92,6 +92,39 @@
         <div id="calendar"></div>
       <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 		  </div>
+      <div id="appointment-form-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-form">&times;</span>
+            <form id="appointment-form">
+                <label for="doc-id">Documento Cliente:</label>
+                <input type="text" id="doc-id" name="doc-id" required>
+    
+                <label for="client-name">Nombre Cliente:</label>
+                <input type="text" id="client-name" name="client-name" required>
+    
+                <label for="employee">Empleado:</label>
+                <select id="employee" name="employee">
+                    <!-- Opciones de empleados se añadirán aquí -->
+                </select>
+    
+                <label for="service">Servicio:</label>
+                <select id="service" name="service">
+                    <!-- Opciones de servicios se añadirán aquí -->
+                </select>
+    
+                <label for="hour">Hora:</label>
+                <select id="hour" name="hour">
+                    <!-- Opciones de horas se añadirán aquí -->
+                </select>
+    
+                <label for="price">Precio:</label>
+                <input type="text" id="price" name="price" readonly>
+    
+                <button type="submit">Agendar Cita</button>
+            </form>
+        </div>
+    </div>
+    
       </div>
       <div id="footer" ></div>
       
