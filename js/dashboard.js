@@ -7,7 +7,7 @@ var barChartOptions = {
   }],
   chart: {
     type: "bar",
-    background: "black",
+    background: "#1E1E1E",
     height: 350,
     toolbar: {
       show: false,
