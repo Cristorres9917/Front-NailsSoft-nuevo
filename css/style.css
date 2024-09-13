@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -32,9 +33,7 @@
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --breakpoint-xl: 1200px; }
 
 *,
 *::before,
@@ -43,7 +42,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -53,7 +52,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -155,7 +154,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em; }
 
 pre {
@@ -168,7 +167,12 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;}
+
+.logoheader {
+  width: 50px;
+  margin-right: -50px; 
+}
 
 svg {
   overflow: hidden;
@@ -204,7 +208,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: 'Montserrat', sans-serif;
   font-size: inherit;
   line-height: inherit; }
 
@@ -3440,7 +3444,8 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem; 
+  }
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -4886,7 +4891,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4971,7 +4976,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7902,7 +7907,7 @@ button.bg-dark:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; }
+  font-family: 'Montserrat', sans-serif !important; }
 
 .text-justify {
   text-align: justify !important; }
@@ -8133,7 +8138,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.8;
   font-weight: normal;
@@ -8165,7 +8170,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #000; }
 
 .img {
@@ -8177,10 +8182,11 @@ h1, h2, h3, h4, h5,
   width: 100%; }
 
 #sidebar {
+  box-shadow: 6px 8px 11px 0px rgba(0,0,0,0.75);
   margin-top: 60px;
   min-width: 300px;
   max-width: 300px;
-  background: #EBE5DD;
+  background-image: linear-gradient(to bottom, #d6c6e1, #ddd1e7, #e5dcec, #ede8f2, #f5f3f7);
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8220,7 +8226,7 @@ h1, h2, h3, h4, h5,
       margin-right: -50px; }
     #sidebar.active .btn.btn-primary:before {
       content: "\f053";
-      font-family: "FontAwesome";
+      font-family: 'Montserrat', sans-serif;
       right: 2px !important; }
     #sidebar.active .btn.btn-primary:after {
       display: none; }
@@ -8260,7 +8266,7 @@ h1, h2, h3, h4, h5,
           content: '';
           background: red;
           border-radius: 50%;
-          font-family: "Poppins", Arial, sans-serif;
+          font-family: 'Montserrat', sans-serif;
           font-size: 8px; }
       #sidebar ul li a:hover {
         color: black;
@@ -8270,7 +8276,7 @@ h1, h2, h3, h4, h5,
       background: transparent;
       color: black; }
       #sidebar ul li.active > a:hover {
-        background: black;
+        background: #61398F;
         border-bottom: 1px solid white;
         color: white; }
   @media (max-width: 991.98px) {
@@ -8309,7 +8315,7 @@ h1, h2, h3, h4, h5,
         left: 0;
         right: 0;
         bottom: 0;
-        font-family: "FontAwesome";
+        font-family: 'Montserrat', sans-serif;
         color: white;
          }
       #sidebar .custom-menu .btn.btn-primary:after {
@@ -8319,26 +8325,29 @@ h1, h2, h3, h4, h5,
 .bg-wrap {
   width: 100%;
   position: relative;
-  z-index: 0; }
+  z-index: 0; 
+  background-image: linear-gradient(to bottom, #d6c6e1, #ddd1e7);}
   .bg-wrap:after {
     z-index: -1;
     position: absolute;
     top: 0;
+    background-image: linear-gradient(to bottom, #d6c6e1, #ddd1e7);
     left: 0;
     right: 0;
     bottom: 0;
     content: '';
-    background: #000;
     opacity: .3; }
   .bg-wrap .user-logo .img {
     width: 100px;
+    box-shadow: inset -7px 8px 5px 0px rgba(0,0,0,0.75);
     height: 100px;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 10px; }
   .bg-wrap .user-logo h3 {
     color: black;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-left: -10px; }
 
 a[data-toggle="collapse"] {
   position: relative; }
@@ -8407,7 +8416,7 @@ a[data-toggle="collapse"] {
 /* Aqui empezara el formulario del rol */
 
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: 'Montserrat', sans-serif;
   src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
@@ -8426,7 +8435,7 @@ a[data-toggle="collapse"] {
 
 body{
     /* background: #DBDBDB; */
-    font-family: 'Open sans';
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* FORMULARIO =================================== */
@@ -8548,7 +8557,7 @@ form.form_contact textarea{
     border: none;
     border-bottom: 2px solid #D1D1D1;
 
-    font-family: 'Open sans';
+    font-family: 'Montserrat', sans-serif;
     color: #5A5A5A;
     font-size: 14px;
     font-weight: 400;
@@ -8570,7 +8579,7 @@ form.form_contact input[type="button"]{
     align-self: flex-end;
 
     color: #fff;
-    font-family: 'Open sans';
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -8605,7 +8614,7 @@ form.form_contact input[type="button"]:hover{
 
 .mensaje_modal h3{
     text-align: center;
-    font-family: 'Ubuntu';
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
@@ -8626,7 +8635,7 @@ form.form_contact input[type="button"]:hover{
 
 .mensaje_modal p:before{
     content: "\f00d";
-    font-family: FontAwesome;
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
     color: #E25151;
     margin-right: 8px;
@@ -8669,7 +8678,7 @@ form.form_contact input[type="button"]:hover{
             padding: 20px;
             border-radius: 12px solid #888;
             width: 25%; /* Puedes ajustar el ancho según tus necesidades */
-            font-family:cursive;
+            font-family: 'Montserrat', sans-serif;
             font-size: medium;
         }
 
@@ -8690,7 +8699,7 @@ form.form_contact input[type="button"]:hover{
 
         .buttonModal {
           background-color: var(--success);
-          font-family: cursive;
+          font-family: 'Montserrat', sans-serif;
           border-radius: 30%;
           margin: 10px;
         } 
@@ -8704,7 +8713,7 @@ form.form_contact input[type="button"]:hover{
   
   body {
    overflow: hidden;
-   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 100;
    color: rgba(255, 255, 255, 1);
    margin: 0;
@@ -9079,7 +9088,7 @@ body,
 
 /* Estilos Carousel */
 html, body {
-  background-image: linear-gradient(283deg, rgba(238,15,180, 0.1) 30%, rgba(31, 31, 31,0.1) 70%);
+  background-color:#E9E4ED;
 }
 
 
@@ -9093,7 +9102,7 @@ body
 	height:100%;
 	min-height:1000px;
 	overflow:scroll;
-	font-family: 'quicksandlight', Helvetica, Arial;
+  font-family: 'Montserrat', sans-serif;
 	color:black;
 	text-shadow: -1px -1px 4px rgba(0, 0, 0, .35);
     filter: dropshadow(color=#000000, offx=1, offy=1);
@@ -9121,8 +9130,7 @@ h1{
 }
 
 h3{
-	font-family: 'Sevillana', cursive;
-  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
 	font-size:3rem;
 	letter-spacing:-1.5px;
 	margin-top:5px;
@@ -9132,7 +9140,7 @@ h3{
 
 .h31 {
 
-  font-family: 'Sevillana', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-style: italic;
 	font-size:3rem;
 	letter-spacing:-1.5px;
@@ -9270,7 +9278,7 @@ a:hover
   h3 {
     font-size: 0.75rem;
     margin-left: 1rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .carouselItemInner {
@@ -9287,10 +9295,10 @@ body {
 	overflow-x:hidden;
 	
 	min-height:10vh;
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 	.footer {
 		z-index: 1;
-		--footer-background: #b8aea3;
+		--footer-background: #D6C6E1;
 		display:flex;
 		position: absolute;
 		grid-area: footer;
@@ -9323,12 +9331,12 @@ body {
 			padding:2rem;
 			background:var(--footer-background);
 			a, p {
-				color:white;
+				color:black;
 				text-decoration:none;
         font-size: 13px;
 			}
 			b {
-				color:white;
+				color:black;
 			}
 			p {
 				margin:0;
@@ -9390,16 +9398,17 @@ body {
 
 
 /* Header (Navbar) */
+
 .header {
   width: 100%;
   margin-top: 0px;
-  background-color: #EBE5DD;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #d6c6e1, #dbcde4, #dfd5e7);
+  box-shadow: 0px 6px 14px -1px rgba(0,0,0,0.75);
 }
 
 .navbar {
   padding: 0.8rem 1rem;
-  background-color: #EBE5DD;
+  background-image: linear-gradient(to right, #d6c6e1, #dbcde4, #dfd5e7);
 }
 
 .navbar-brand {
@@ -9410,8 +9419,8 @@ body {
 
 .brand-name {
   font-size: 1.5rem;
-  font-weight: bold;
   margin-left: 65px;
+  font-weight: 500;
   color: black;
 }
 

@@ -9,7 +9,7 @@
 
 body{
     background-color: #ffffec;
-    background: linear-gradient(to right, #e2e2e2, #fff1d3);
+    background-image: linear-gradient(to right, #d6c6e1, #dbcde4, #dfd5e7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,14 +41,14 @@ body{
 }
 
 .container a{
-    color: #333;
+    color: #000000;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
 .container button{
-    background-color: #736649;
+    background-color: #8B5FBF;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -102,6 +102,9 @@ body{
 
 .container.active .sign-in{
     transform: translateX(100%);
+}
+#loginForm button a {
+    color: white;
 }
 
 .sign-up{
@@ -164,7 +167,7 @@ body{
 .toggle{
     background-color: #512da8;
     height: 100%;
-    background: linear-gradient(to right, #444236, #443d2f);
+    background: linear-gradient(to right, #8B5FBF, #9A73B5);
     color: #fff;
     position: relative;
     left: -100%;

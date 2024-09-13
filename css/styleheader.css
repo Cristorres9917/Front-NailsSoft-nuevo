@@ -13,28 +13,48 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Nunito;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-  font-family: 'Sevillana', cursive;
-  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
    font-size: 9rem;
-   color:#2e2c2c;
+   color:#222831;
+   margin-left: 200px;
    
 }
 
 h2 {
   
-  color:#000000
+  color:#000000;
+  font-size: 30px;
 }
 
 p {
-  font-family: 'Sevillana', cursive;
-  font-style: italic;
-  font-size: 180%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 140%;
   line-height: 180%;
   color: #060606;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.header-right{
+  align-items: flex-end;
+  cursor: pointer;
+  margin-top: -125px;
+  margin-left: 38rem;
+}
+
+.header-right span{
+  padding-left: 25px;
+}
+
+span{
+  font-size: 20px;
 }
 
 .slide {
@@ -45,6 +65,10 @@ p {
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
 	transform-style: inherit;
+}
+
+h3{
+  color: white;
 }
 
 img {
