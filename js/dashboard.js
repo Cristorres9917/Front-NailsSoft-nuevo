@@ -7,7 +7,7 @@ var barChartOptions = {
   }],
   chart: {
     type: "bar",
-    background: "#1E1E1E",
+    background: "transparent",
     height: 350,
     toolbar: {
       show: false,
@@ -49,7 +49,7 @@ var barChartOptions = {
   },
   legend: {
     labels: {
-      colors: "#f5f7ff",
+      colors: "#000",
     },
     show: true,
     position: "top",
@@ -68,20 +68,20 @@ var barChartOptions = {
     categories: ["Teclado", "Laptop", "Monitor", "Mouse", "Parlante"],
     title: {
       style: {
-        color: "#f5f7ff",
+        color: "#000",
       },
     },
     axisBorder: {
       show: true,
-      color: "#55596e",
+      color: "#000",
     },
     axisTicks: {
       show: true,
-      color: "#55596e",
+      color: "#000",
     },
     labels: {
       style: {
-        colors: "#f5f7ff",
+        colors: "#000",
       },
     },
   },
@@ -89,20 +89,20 @@ var barChartOptions = {
     title: {
       text: "Total",
       style: {
-        color:  "#f5f7ff",
+        color:  "#000",
       },
     },
     axisBorder: {
-      color: "#55596e",
+      color: "#000",
       show: true,
     },
     axisTicks: {
-      color: "#55596e",
+      color: "#000",
       show: true,
     },
     labels: {
       style: {
-        colors: "#f5f7ff",
+        colors: "#000",
       },
     },
   }
@@ -123,7 +123,7 @@ var areaChartOptions = {
   }],
   chart: {
     type: "area",
-    background: "black",
+    background: "transparent",
     height: 350,
     stacked: false,
     toolbar: {
@@ -160,14 +160,14 @@ var areaChartOptions = {
   },
   legend: {
     labels: {
-      colors: "#f5f7ff",
+      colors: "#000",
     },
     show: true,
     position: "top",
   },
   markers: {
     size: 6,
-    strokeColors: "#1b2635",
+    strokeColors: "#000",
     strokeWidth: 3,
   },
   stroke: {
@@ -175,17 +175,17 @@ var areaChartOptions = {
   },
   xaxis: {
     axisBorder: {
-      color: "#55596e",
+      color: "#000",
       show: true,
     },
     axisTicks: {
-      color: "#55596e",
+      color: "#000",
       show: true,
     },
     labels: {
       offsetY: 5,
       style: {
-        colors: "#f5f7ff",
+        colors: "#000",
       },
     },
   },
@@ -194,12 +194,12 @@ var areaChartOptions = {
       title: {
         text: "Ordenes de compra",
         style: {
-          color: "#f5f7ff",
+          color: "#000",
         },
       },
       labels: {
         style: {
-          colors: ["#f5f7ff"],
+          colors: ["#000"],
         },
       },
     },
@@ -208,12 +208,12 @@ var areaChartOptions = {
       title: {
         text: "Ordenes de venta",
         style: {
-          color:  "#f5f7ff",
+          color:  "#000",
         },
       },
       labels: {
         style: {
-          colors: ["#f5f7ff"],
+          colors: ["#000"],
         },
       },
     },
