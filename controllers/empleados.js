@@ -133,6 +133,12 @@ document.getElementById('employeeForm').addEventListener('submit', function(even
       telefono: employeePhone,
       rol: employeeRole,
     };
+
+    swalWithBootstrapButtons.fire({
+      title: "¡Editado!",
+      text: "El empleado ha sido actualizado con éxito.",
+      icon: "success"
+    });
   } else {
     // Crear un nuevo empleado
     const newId = employees.length + 1; // Generar nuevo ID
@@ -142,6 +148,12 @@ document.getElementById('employeeForm').addEventListener('submit', function(even
       email: employeeEmail,
       telefono: employeePhone,
       rol: employeeRole,
+    });
+
+    swalWithBootstrapButtons.fire({
+      title: "¡Creado!",
+      text: "El nuevo empleado ha sido agregado.",
+      icon: "success"
     });
   }
 
