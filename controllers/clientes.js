@@ -147,6 +147,13 @@ document.getElementById('editClientForm').addEventListener('submit', function(ev
 
   // Cerrar el modal de edición
   editModal.style.display = 'none';
+
+  // Mostrar alerta de confirmación de edición
+  swalWithBootstrapButtons.fire({
+    title: "¡Editado!",
+    text: "El cliente ha sido actualizado.",
+    icon: "success"
+  });
 });
 
 // Funcionalidad para abrir y cerrar el modal de agregar cliente
