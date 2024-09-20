@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <link rel="icon" href="images/logo1.png" type="image/png">
-  	<title>Ventas de Servicios & Productos🐉</title>
+    <title>Ventas de Servicios & Productos🐉</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Font Awesome and Google Fonts -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="scss/style.scss">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,19 +39,19 @@
           </div>
         </nav>
       </div>
-    </header>	
-		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-	        </button>
+    </header>  
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          </button>
         </div>
-	  		<div class="img bg-wrap text-center py-4">
-	  			<div class="user-logo">
-	  				<a href="index.html"><div class="img" style="background-image: url(images/logo1.png);"></div></a>
-	  				<h3>Venta Servicios/Productos</h3>
-	  			</div>
-	  		</div>
+        <div class="img bg-wrap text-center py-4">
+          <div class="user-logo">
+            <a href="index.html"><div class="img" style="background-image: url(images/logo1.png);"></div></a>
+            <h3>Venta Servicios/Productos</h3>
+          </div>
+        </div>
         <ul class="list-unstyled components mb-5">
             <li class="active">
                 <a href="dashboard.html"><span class="fa fa-dashboard mr-3"></span> Dashboard</a>
@@ -86,53 +87,105 @@
                 <a href="bajaproducto.html"><span class="fa fa-arrow-down mr-3"></span> Baja Productos</a>
               </li>
         </ul>
+      </nav>
 
-    	</nav>
-
-        <!-- Page Content  -->
-      
       <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
-        <h3 class="h31">Descubre la perfección en cada diseño.</h2>
-        <button id="redirectButton">Agenda tu cita ahora mismo</button>
-        <div id="contentContainer" class="trans3d"> 
-          
-          <section id="carouselContainer" class="trans3d">
-            <figure id="item1" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/img1.jpg" alt="Imagen" class="imgp1"><h3>Manicura</h3></div></figure>
-            <figure id="item2" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/img2.jpeg" alt="Imagen2" class="imgp1"><h3>Manicura</h3></div></figure>
-            <figure id="item3" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/img3.jpg" alt="Imagen3" class="imgp1"><h3>Manicura</h3></div></figure>
-            <figure id="item4" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/img4.jpg" alt="Imagen4" class="imgp1"><h3>Pedicura</h3></div></figure>
-            <figure id="item5" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/img5.jpg" alt="Imagen5" class="imgp1"><h3>Pedicura</h3></div></figure>
-            <figure id="item6" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/img6.jpg" alt="Imagen6" class="imgp1"><h3>Pedicura</h3></div></figure>
-            <figure id="item7" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/img7.jpg" alt="Imagen7" class="imgp1"><h3>Pedicura</h3></div></figure>
-            <figure id="item8" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/Cepillo de uñas.jpeg" alt="Imagen8" class="imgp1"><h3>Cepillo de uñas</h3></div></figure>
-            <figure id="item9" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/CortaUñas.jpeg" alt="Imagen9" class="imgp1"><h3>Corta uñas</h3></div></figure>
-            <figure id="item10" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/esmalte.jpeg" alt="Imagen10" class="imgp1"><h3>Esmalte</h3></div></figure>
-            <figure id="item11" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/Limas.jpeg" alt="Imagen11" class="imgp1"><h3>Limas</h3></div></figure>
-            <figure id="item12" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img src="images/esmalte.jpeg" alt="Imagen12" class="imgp1"><h3>Esmaltes</h3></div></figure>
-          </section>
+        <h3 class="h31">Descubre la perfección en cada diseño.</h3>
+      
+        <!-- Main container para las tarjetas -->
+        <div class="container">
+          <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 100%;">
+                <img src="images/Cepillo de uñas.jpeg" class="card-img-top img-fixed" alt="Cepillo de uñas">
+                <div class="card-body">
+                  <h5 class="card-title">Cepillo de uñas</h5>
+                  <p class="card-text">Mantén tus uñas libres de todo mugre.</p>
+                  <a href="#" class="btn btn-primary">15.000</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 100%;">
+                <img src="images/CortaUñas.jpeg" class="card-img-top img-fixed" alt="Corta uñas">
+                <div class="card-body">
+                  <h5 class="card-title">Corta uñas</h5>
+                  <p class="card-text">Uñas hermosas en todo lugar.</p>
+                  <a href="#" class="btn btn-primary">3.000</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 100%;">
+                <img src="images/esmalte.jpeg" class="card-img-top img-fixed" alt="Esmalte de uñas">
+                <div class="card-body">
+                  <h5 class="card-title">Esmalte</h5>
+                  <p class="card-text">Color perfecto para cualquier ocasión.</p>
+                  <a href="#" class="btn btn-primary">1.000</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tarjeta 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 100%;">
+                <img src="images/Limas.jpeg" class="card-img-top img-fixed" alt="Limas de uñas">
+                <div class="card-body">
+                  <h5 class="card-title">Limas</h5>
+                  <p class="card-text">Que tus uñas no sean garras.</p>
+                  <a href="#" class="btn btn-primary">2.000</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tarjeta 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 100%;">
+                <img src="images/img5.jpg" class="card-img-top img-fixed" alt="Pedicura">
+                <div class="card-body">
+                  <h5 class="card-title">Pedicura</h5>
+                  <p class="card-text">Luce pies perfectos siempre.</p>
+                  <a href="#" class="btn btn-primary">12.000</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tarjeta 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 100%;">
+                <img src="images/img6.jpg" class="card-img-top img-fixed" alt="Manicura">
+                <div class="card-body">
+                  <h5 class="card-title">Manicura</h5>
+                  <p class="card-text">Cuidado completo para tus manos.</p>
+                  <a href="#" class="btn btn-primary">10.000</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tarjeta 7 -->
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 100%;">
+                <img src="images/img7.jpg" class="card-img-top img-fixed" alt="Kit de uñas">
+                <div class="card-body">
+                  <h5 class="card-title">Kit de uñas</h5>
+                  <p class="card-text">Todo lo que necesitas para unas uñas increíbles.</p>
+                  <a href="#" class="btn btn-primary">20.000</a>
+                </div>
+              </div>
+            </div>
           </div>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-        
-          <script src="js/carousel.js"></script>
-
-          
-        
-        
-        
-        
+        </div>
       </div>
       
-		</div>
+    </div>
 
-    
-
-
-
-
-
-    <div id="footer" ></div>
+    <div id="footer"></div>
     <script src="js/includeFooter.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
@@ -142,4 +195,3 @@
     <script src="js/alerta.js"></script>
   </body>
 </html>
-
