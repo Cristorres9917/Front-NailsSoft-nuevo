@@ -9529,3 +9529,37 @@ body {
   padding: 5px 10px;
   font-size: 14px;
 }
+
+.img-fluid {
+  transition: all .5s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+}
+
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 10px 10px;
+  color: #fff;
+
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+/*Style de cards*/
+.img-fixed {
+  height: 200px; /* Ajusta la altura según necesites */
+  object-fit: cover; /* Mantiene la proporción de la imagen sin distorsión */
+  width: 100%;
+}
