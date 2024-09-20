@@ -1,0 +1,25 @@
+/*Style de cards*/
+.img-fixed {
+    height: 200px; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsión */
+    width: 100%;
+}
+
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 10px 10px;
+    color: #fff;
+
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.form-group {
+    padding: 10px;
+}
